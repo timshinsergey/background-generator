@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: url('OpenSans-SemiBold.ttf') format('truetype');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('OpenSans-Bold.ttf') format('truetype');
+    font-display: swap;
+}
+body {
+    font: 'Open Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    top: 15%;
+    background: linear-gradient(to right, #333333, #999999);
+}
+h1 {
+    font: 700 3.5em 'Open Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    width: 100%;
+}
+h3 {
+    font: 600 1em 'Open Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    text-transform: none;
+    letter-spacing: .01em;
+}
+button {
+    letter-spacing: normal;
+}
+.animate-background {
+    -webkit-animation: bodyBackground 4s ease infinite;
+    animation: bodyBackground 4s ease infinite;
+}
+@-webkit-keyframes bodyBackground {
+    0% {background-position: 0% 25% } 
+    50% {background-position: 100% 25% } 
+    100% {background-position: 0% 25% } 
+}
+@keyframes bodyBackground {
+    0% {background-position: 0% 25% } 
+    50% {background-position: 100% 25% } 
+    100% {background-position: 0% 25% } 
+}
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 9px;
+    }
+    h1 {
+        letter-spacing: normal;
+    }
+}
